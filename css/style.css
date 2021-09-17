@@ -1,0 +1,47 @@
+:root {
+
+}
+
+body {
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(150px, 1fr));
+	/*grid-auto-columns: auto;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery__figure {
+	background: #808080;
+	width: 100%;
+	height: 180px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery__figure figcaption {
+	place-self: center;
+}
+
+.gallery__figure figcaption a {
+	color: #ffff;
+}
+
+.gallery__figure figcaption:hover a{
+	color: hotpink;
+}
