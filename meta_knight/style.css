@@ -1,0 +1,127 @@
+:root {
+	--blue: #0000ff;
+	--gray: #808080;
+	--yellow: #ffff00;
+	--black: #000;
+	--red: #ff0000;
+	--armor: #4a4949;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.layer {
+	display: grid;
+	height: 100vh;
+	margin: 0;
+	place-items: center;
+	width: 100%;
+}
+
+.metaKnight__head {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.metaKnight__head--normal {
+	background: var(--blue);
+}
+
+.metaKnight__head--mask {
+	background: var(--gray);
+}
+
+.metaKnight__eyes {
+	background: var(--yellow);
+	position: absolute;
+	width: 15px;
+}
+
+.metaKnight__head__eyes--left {
+	border-radius: 20px;
+	height: 37px;
+	top: 50px;
+	left: 70px;
+}
+
+.metaKnight__head__eyes--right {
+	border-radius: 20px;
+	height: 37px;
+	top: 50px;
+	right: 70px;
+}
+
+.metaKnight__mouth {
+	background: var(--black);
+	border-radius: 7px 5px 13px 13px;
+	bottom: 20px;
+	left: 50%;
+	height: 30px;
+	position: absolute;
+	transform: translate(-50%, -20px);
+	width: 30px;
+}
+
+.metaKnight__mouth__tongue {
+	background: var(--red);
+	border-radius: 15px 5px 20px 9px;
+	bottom: 0;
+	left: 7px;
+	height: 15px;
+	position: absolute;
+	width: 23px;
+}
+
+.metaKnight__mask {
+	position: absolute;
+	width: 150px;
+	height: 45px;
+	top: 40px;
+	left: 25px;
+	border-bottom: 30px solid var(--black);
+	border-radius: 50%;
+}
+
+.metaKnight__mask__extra {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: var(--armor);
+	border-radius: 10px 100px 10px 100px;
+}
+
+.metaKnight__mask__extra--top {
+	top: 0;
+}
+
+.metaKnight__mask__extra--bottom {
+	bottom: -100px;
+}
+
+.metaKnight__mask__extra--left {
+	left: 10px;
+}
+
+.metaKnight__mask__extra--right {
+	right: 10px;
+	transform: rotate(90deg);
+
+}
+
+.metaKnight__mask__eyes--left {
+	border-radius: 20px 20px 25px 25px;
+	height: 29px;
+	top: 45px;
+	left: 45px;
+}
+
+.metaKnight__mask__eyes--right {
+	border-radius: 20px 20px 25px 25px;
+	height: 29px;
+	top: 45px;
+	right: 45px;
+}
